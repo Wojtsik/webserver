@@ -1,0 +1,438 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Ubuntu",sans-serif;
+  box-sizing: border-box;
+}
+a {
+  color:rgb(255, 255, 255)
+}
+body {
+  background-color: #424242;
+}
+html {
+  scroll-behavior: smooth;
+}
+.navbar{
+  position: fixed;
+  background-color: transparent;
+  width: 100%;
+  padding: 15px 0;
+  top: 0;
+  z-index: 999;
+  transition: .3s linear;
+}
+
+.inner-width{
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 40px;
+}
+
+.navbar .inner-width{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo{
+  width: 70px;
+  height: 70px;
+  background-image: url(../images/white-logo.png);
+  background-size: contain;
+}
+
+.menu-toggler{
+  background: none;
+  width: 30px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  outline: none;
+  z-index: 999;
+  display: none;
+}
+
+.menu-toggler span{
+  display: block;
+  height: 3px;
+  background-color: #fff;
+  margin: 6px 0;
+  position: relative;
+  transition: .3s linear;
+}
+.navbar-menu a{
+  color: rgb(199, 197, 197);
+  font-size: 15px;
+  font-weight: 500;
+  margin-left: 30px;
+  transition: .2s linear;
+}
+
+.navbar-menu a:hover{
+  color: #48dbfb !important;
+}
+
+.sticky{
+  background-color: rgb(255, 255, 255);
+}
+
+.sticky .logo{
+  background-image: url(../images/black-logo.png);
+}
+
+.sticky .navbar-menu a{
+  color: rgb(0, 0, 0);
+}
+
+.sticky .menu-toggler span{
+  background-color: #111;
+}
+div.navbar-menu a.here {
+  color:rgb(38, 192, 0); 
+  text-decoration-style: dashed;
+}
+
+#home{
+  height: 100vh;
+  min-height: 500px;
+  background: url(../images/bg.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#about{
+  height: 100vh;
+  min-height: 500px;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#games {
+  height: 100px;
+  min-height: 500px;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#about .inner-width{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+}
+#about .content{
+  width: 100%;
+  color: #fff;
+}
+#about p {
+  display: inline-block;
+  margin: 15px 10px;
+  color: #a0fa57;
+  font-size: 15px;
+  font-weight: 500;
+  width: 180px 180px;
+  border: 2px solid #578bfa;
+  padding: 14px 14px 14px 14px;
+  border-radius: 16px;
+  transition: .2s linear;
+}
+#games div.clicker {
+  display: inline-block;
+  margin: 15px 30px;
+  color: #578bfa;
+  font-size: 15px;
+  font-weight: 500;
+  width: 180px 180px;
+  border: 0px solid #578bfa;
+  padding: 14px 14px 14px 14px;
+  border-radius: 16px;
+  transition: .2s linear;
+  text-align: center;
+}
+#games .inner-width{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+}
+#games .content{
+  width: 100%;
+  color: #fff;
+}
+#games p {
+  display: inline-block;
+  margin: 15px 90px;
+  color: #578bfa;
+  font-size: 15px;
+  font-weight: 500;
+  width: 180px 180px;
+  border: 2px solid #578bfa;
+  padding: 14px 14px 14px 14px;
+  border-radius: 16px;
+  transition: .2s linear;
+}
+#home .inner-width{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+}
+
+#home .content{
+  width: 50%;
+  color: #fff;
+  text-align: center;
+}
+
+#home .content h1{
+  font-size: 60px;
+  margin-bottom: 60px;
+}
+
+/* DEMO-SPECIFIC STYLES */
+.textanime p {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor efect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+
+.sm a{
+  color: #fff;
+  font-size: 22px;
+  margin: 0 10px;
+  transition: .2s linear;
+}
+
+.sm a:hover{
+  color: #48dbfb;
+}
+
+#home .buttons{
+  margin-top: 60px;
+}
+
+#home .buttons a{
+  display: inline-block;
+  margin: 15px 30px;
+  color: #485afb;
+  font-size: 15px;
+  font-weight: 500;
+  width: 180px;
+  border: 1px solid #485afb;
+  padding: 14px 0;
+  border-radius: 6px;
+  transition: .2s linear;
+}
+
+#home .buttons a:hover,
+#home .buttons a:nth-child(3)
+{
+  background-color: #485afb;
+  color: rgb(255, 255, 255);
+}
+
+
+@media screen and (max-width: 980px){
+  .menu-toggler{
+    display: block;
+  }
+
+  .navbar-menu{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background-color: #ffffff;
+    top: 0;
+    right: -100%;
+    max-width: 400px;
+    padding: 80px 50px;
+    transition: .3s linear;
+  }
+
+  .navbar-menu a{
+    display: block;
+    font-size: 30px;
+    margin: 30px 0;
+  }
+
+  .sticky .navbar-menu{
+    background-color: #ffffff;
+  }
+  
+  .navbar-menu.active{
+    right: 0;
+  }
+
+  .menu-toggler.active span:nth-child(1){
+    transform: rotate(-45deg);
+    top: 4px;
+  }
+
+  .menu-toggler.active span:nth-child(2){
+    opacity: 0;
+  }
+
+  .menu-toggler.active span:nth-child(3){
+    transform: rotate(45deg);
+    bottom: 14px;
+  }
+}
+.imgclicker {
+  display: inline-block; 
+  border: 4px solid #578bfa;
+   border-radius: 100px;
+   
+}
+#games .buttons a{
+  display: inline-block;
+  margin: -15px -10px;
+  color: #e4bb06;
+  font-size: 15px;
+  font-weight: 500;
+  width: 180px;
+  border: 1px solid #f5ff97;
+  padding: 14px 0;
+  border-radius: 12px;
+  transition: .3s linear;
+}
+#games .buttons{
+  margin-top: 60px;
+}
+#games .buttons a:hover,
+#games .buttons a:nth-child(3)
+{
+  background-color: #fbda48;
+  color: rgb(56, 56, 56);
+}
+
+#games .buttons2 a{
+  display: inline-block;
+  margin: -15px -10px;
+  color: #e40606;
+  font-size: 15px;
+  font-weight: 500;
+  width: 180px;
+  border: 1px solid #ff9797;
+  padding: 14px 0;
+  border-radius: 12px;
+  transition: .3s linear;
+}
+#games .buttons2{
+  margin-top: 60px;
+}
+#games .buttons2 a:hover,
+#games .buttons2 a:nth-child(3)
+{
+  background-color: #fb4848;
+  color: rgb(56, 56, 56);
+}
+.imgclicker2 {
+  display: inline-block; 
+  border: 4px solid #fa5757;
+   border-radius: 100px;
+   
+}
+#contact p {
+  display: inline-block;
+  margin: 15px 90px;
+  color: #578bfa;
+  font-size: 15px;
+  font-weight: 500;
+  width: 180px 180px;
+  border: 2px solid #578bfa;
+  padding: 14px 14px 14px 14px;
+  border-radius: 16px;
+  transition: .2s linear;
+}
+#contact .inner-width{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+}
+
+#contact .content{
+  width: 100%;
+  color: #fff;
+}
+
+#contact .content h1{
+  font-size: 60px;
+  margin-bottom: 60px;
+}
+#contact s {
+  color: rgb(118, 231, 137);
+  padding: 2px 7px 2px 7px;
+  border-radius: 4px;
+
+}
+#contact s.Rank {
+  color: rgb(207, 50, 63);
+  border: 1px solid rgb(236, 83, 83);
+  padding: 1px 5px 1px 5px;
+  border-radius: 4px;
+}
+#contact a {
+  color:rgb(118, 231, 137);
+}
+#partners {
+ background: url(../images/bg.jpg) no-repeat center;
+ height: 100vh;
+ min-height: 500px;
+ background-size: cover;
+ background-attachment: fixed;
+}
+#partners .inner-width{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+}
+#partners .content{
+  width: 100%;
+  color: #fff;
+}
+#partners p {
+  display: inline-block;
+  margin: 15px 10px;
+  color: #a0fa57;
+  font-size: 15px;
+  font-weight: 500;
+  width: 180px 180px;
+  border: 2px solid #57fa5f;
+  padding: 14px 14px 14px 14px;
+  border-radius: 1px;
+  transition: .2s linear;
+  margin-top: 100px;
+  margin-left: 575px;
+}
+#contact div.cont {
+  border: solid rgb(95, 165, 255);
+  width: 40px;
+  height: 110px;
+  border-radius: 10px;
+  margin-left: 10px;
+}
