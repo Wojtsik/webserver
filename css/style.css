@@ -422,11 +422,10 @@ div.navbar-menu a.here {
   font-size: 15px;
   font-weight: 500;
   width: 180px 180px;
-  border: 2px solid #57fa5f;
   padding: 14px 14px 14px 14px;
   border-radius: 1px;
   transition: .2s linear;
-  margin-top: 100px;
+  margin-top: 30px;
   
 }
 #contact div.cont {
