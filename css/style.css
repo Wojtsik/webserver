@@ -416,7 +416,7 @@ div.navbar-menu a.here {
   color: #fff;
 }
 #partners p {
-  display: inline-block;
+  display: list-item;
   margin: 15px 10px;
   color: #a0fa57;
   font-size: 15px;
@@ -427,7 +427,7 @@ div.navbar-menu a.here {
   border-radius: 1px;
   transition: .2s linear;
   margin-top: 100px;
-  margin-left: 575px;
+  
 }
 #contact div.cont {
   border: solid rgb(95, 165, 255);
@@ -435,4 +435,7 @@ div.navbar-menu a.here {
   height: 110px;
   border-radius: 10px;
   margin-left: 10px;
+}
+#footer p {
+  font-style: inherit;
 }
