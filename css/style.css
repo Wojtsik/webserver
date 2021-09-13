@@ -416,7 +416,7 @@ div.navbar-menu a.here {
   color: #fff;
 }
 #partners p {
-  display: list-item;
+  display: flex;
   margin: 15px 10px;
   color: #a0fa57;
   font-size: 15px;
