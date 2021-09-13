@@ -425,7 +425,7 @@ div.navbar-menu a.here {
   padding: 14px 14px 14px 14px;
   border-radius: 1px;
   transition: .2s linear;
-  margin-top: 100px;
+  text-align: center;
   
 }
 #contact div.cont {
